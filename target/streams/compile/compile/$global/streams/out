@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioEntrega.java:19:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable a[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioEntrega[0m
+[0m[[0m[31merror[0m] [0m[0m        System.out.println(a);[0m
