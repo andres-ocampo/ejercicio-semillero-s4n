@@ -10,8 +10,7 @@ public class ServicioEntrega {
     public static Option<Dron> realizarEntrega(Dron dron){
 
         Entrega entrega = ServicioManejoArchivo.getRutaEntrega(0);
-        Entrega entrega1 = ServicioManejoArchivo.getRutaEntrega(1);
-        Entrega entrega2 = ServicioManejoArchivo.getRutaEntrega(2);
+        ServicioManejoArchivo.leerArchivo();
         System.out.println(entrega.getRuta());
         Option<Dron> dronOption = Option.of(dron);
         for (int i = 0; i < entrega.getRuta().length; i++)

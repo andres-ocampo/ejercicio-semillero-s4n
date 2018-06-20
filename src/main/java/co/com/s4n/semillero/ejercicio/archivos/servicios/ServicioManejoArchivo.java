@@ -23,18 +23,18 @@ public class ServicioManejoArchivo {
         else return Validation.invalid("El archivo no tiene tres líneas");
     }
 
+    private static Validation<Seq<String>, String> validar(Try<List<String>> archivo) {
+        return Validation
+                .combine(tryEsExitoso(archivo),
+                        tieneTresLineas(archivo))
+                .ap((x,y)->"");
+    }
+
     public static List<String> leerArchivo(){
         Path path = Paths.get("/home/s4n/fichero.txt");
         Try<List<String>> archivo = Try.of(() -> Files.lines(path).collect(List.collector()));
         Validation<Seq<String>, String> res = validar(archivo);
         return res.isValid() ? archivo.getOrElse(List.of()) : List.of();
-    }
-
-    private static Validation<Seq<String>, String> validar(Try<List<String>> archivo) {
-        return Validation
-                    .combine(tryEsExitoso(archivo),
-                            tieneTresLineas(archivo))
-                    .ap((x,y)->"");
     }
 
     public static Entrega getRutaEntrega(int posicion){

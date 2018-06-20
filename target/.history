@@ -69,3 +69,5 @@ testOnly co.com.s4n.semillero.ejercicio.servicios.ServicioDronSuite
 compile
 test
 exit
+test
+exit
