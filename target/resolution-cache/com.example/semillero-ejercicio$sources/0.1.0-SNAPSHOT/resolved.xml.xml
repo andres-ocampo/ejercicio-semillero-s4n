@@ -4,7 +4,7 @@
 		module="semillero-ejercicio$sources"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180620111545"
+		publication="20180620211927"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

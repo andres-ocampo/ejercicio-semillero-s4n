@@ -3,6 +3,7 @@ package co.com.s4n.semillero.ejercicio.dominio.servicios;
 import co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo;
 import co.com.s4n.semillero.ejercicio.dominio.entidades.Dron;
 import co.com.s4n.semillero.ejercicio.dominio.entidades.Entrega;
+import io.vavr.collection.List;
 import io.vavr.control.Option;
 
 public class ServicioEntrega {
@@ -10,6 +11,8 @@ public class ServicioEntrega {
     public static Option<Dron> realizarEntrega(Dron dron){
 
         Entrega entrega = ServicioManejoArchivo.getRutaEntrega(0);
+        List<String> list = ServicioManejoArchivo.leerArchivo();
+        System.out.println(list.grouped(3));
         ServicioManejoArchivo.leerArchivo();
         System.out.println(entrega.getRuta());
         Option<Dron> dronOption = Option.of(dron);

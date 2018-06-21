@@ -1,4 +1,10 @@
 [0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mServicioEntregaSuite[0m.[36mtestRealizarEntrega[0m started[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mServicioEntregaSuite[0m.[36mtestRealizarEntrega[0m finished, took 0.06 sec[0m
-[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 1 total, 0.072s[0m[0m
+[0m[[0m[31merror[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mServicioEntregaSuite[0m.[31mtestRealizarEntrega[0m failed: java.lang.[31mIndexOutOfBoundsException[0m: get(0) on Nil, took 0.133 sec[0m
+[0m[[0m[31merror[0m] [0m[0m    at io.vavr.collection.List.get(List.java:887)[0m
+[0m[[0m[31merror[0m] [0m[0m    at co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo.getRutaEntrega(ServicioManejoArchivo.java:44)[0m
+[0m[[0m[31merror[0m] [0m[0m    at co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioEntrega.realizarEntrega(ServicioEntrega.java:13)[0m
+[0m[[0m[31merror[0m] [0m[0m    at co.com.s4n.semillero.ejercicio.servicios.ServicioEntregaSuite.testRealizarEntrega([35mServicioEntregaSuite.java[0m:[33m18[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mServicioEntregaSuite[0m.[36mtestRealizarEntrega[0m finished, took 0.137 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[31m1 failed[0m[34m, [0m[34m0 ignored[0m[34m, 1 total, 0.153s[0m[0m

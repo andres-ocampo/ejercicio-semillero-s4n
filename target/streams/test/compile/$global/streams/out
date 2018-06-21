@@ -1,5 +1,13 @@
-[0m[[0m[31merror[0m] [0m[0m/home/s4n/semillero-ejercicio/src/test/java/co/com/s4n/semillero/ejercicio/servicios/ServicioEntregaSuite.java:10:1: method realizarEntrega in class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioEntrega cannot be applied to given types;[0m
-[0m[[0m[31merror[0m] [0m[0m  required: co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
-[0m[[0m[31merror[0m] [0m[0m  found: no arguments[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Andres\ejercicio-semillero-s4n\src\test\java\co\com\s4n\semillero\ejercicio\servicios\ServicioEntregaSuite.java:16:1: constructor Dron in class co.com.s4n.semillero.ejercicio.dominio.entidades.Dron cannot be applied to given types;[0m
+[0m[[0m[31merror[0m] [0m[0m  required: int,co.com.s4n.semillero.ejercicio.dominio.entidades.Posicion,co.com.s4n.semillero.ejercicio.dominio.vo.Direccion,io.vavr.collection.List<co.com.s4n.semillero.ejercicio.dominio.entidades.Entrega>[0m
+[0m[[0m[31merror[0m] [0m[0m  found: int,int,int,co.com.s4n.semillero.ejercicio.dominio.vo.Direccion,io.vavr.collection.List<java.lang.Object>[0m
 [0m[[0m[31merror[0m] [0m[0m  reason: actual and formal argument lists differ in length[0m
-[0m[[0m[31merror[0m] [0m[0m        ServicioEntrega.realizarEntrega();[0m
+[0m[[0m[31merror[0m] [0m[0m        Dron dron = new Dron(1,0,0,Direccion.NORTE,List.empty());[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Andres\ejercicio-semillero-s4n\src\test\java\co\com\s4n\semillero\ejercicio\servicios\ServicioEntregaSuite.java:19:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getX()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        assertEquals(dronOption.getOrElse(dron).getX(),-2);[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Andres\ejercicio-semillero-s4n\src\test\java\co\com\s4n\semillero\ejercicio\servicios\ServicioEntregaSuite.java:20:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getY()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        assertEquals(dronOption.getOrElse(dron).getY(),4);[0m

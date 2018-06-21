@@ -2,23 +2,23 @@
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/home/s4n/semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java, /home/s4n/semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioEntrega.java, /home/s4n/semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(C:\Users\Andres\ejercicio-semillero-s4n\src\main\java\co\com\s4n\semillero\ejercicio\archivos\servicios\ServicioManejoArchivo.java)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo, co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioEntrega, co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo)[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo, co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioEntrega, co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/home/s4n/semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java, /home/s4n/semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioEntrega.java, /home/s4n/semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java)[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling 3 Java sources to /home/s4n/semillero-ejercicio/target/classes ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mAttempting to call com.sun.tools.javac.api.JavacTool@67745298 directly...[0m
-[0m[[0m[0mdebug[0m] [0m[0mJava compilation took 0.61354743 s[0m
-[0m[[0m[0mdebug[0m] [0m[0mJava analysis took 0.112215237 s[0m
-[0m[[0m[0mdebug[0m] [0m[0mJava compilation + analysis took 0.731471848 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(C:\Users\Andres\ejercicio-semillero-s4n\src\main\java\co\com\s4n\semillero\ejercicio\archivos\servicios\ServicioManejoArchivo.java)[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Java source to C:\Users\Andres\ejercicio-semillero-s4n\target\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mAttempting to call com.sun.tools.javac.api.JavacTool@7b60c854 directly...[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation took 0.506274239 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava analysis took 0.040812388 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation + analysis took 0.550718719 s[0m
 [0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
 [0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Set()[0m

@@ -4,6 +4,7 @@ import co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo;
 import co.com.s4n.semillero.ejercicio.dominio.entidades.Almuerzo;
 import co.com.s4n.semillero.ejercicio.dominio.entidades.Dron;
 import co.com.s4n.semillero.ejercicio.dominio.entidades.Entrega;
+import co.com.s4n.semillero.ejercicio.dominio.entidades.Posicion;
 import co.com.s4n.semillero.ejercicio.dominio.vo.Direccion;
 import io.vavr.collection.List;
 import io.vavr.control.Option;
@@ -11,8 +12,8 @@ import io.vavr.control.Option;
 public class ServicioDron {
 
     static public Option<Dron> avanzar(Dron dron){
-        int x = dron.getX();
-        int y = dron.getY();
+        int x = dron.getPosicion().getX();
+        int y = dron.getPosicion().getY();
         switch (dron.getDireccion()) {
             case NORTE:
                 y += 1;
@@ -29,7 +30,8 @@ public class ServicioDron {
             default:
                 return null;
         }
-        return Option.of(new Dron(dron.getId(),x,y,dron.getDireccion(),dron.getEntregas()));
+        Posicion posicion = new Posicion(x,y);
+        return Option.of(new Dron(dron.getId(),posicion,dron.getDireccion(),dron.getEntregas()));
     }
 
     static public Option<Dron> girarDerecha(Dron dron){
@@ -50,7 +52,7 @@ public class ServicioDron {
             default:
                 break;
         }
-        return Option.of(new Dron(dron.getId(),dron.getX(),dron.getY(),d,dron.getEntregas()));
+        return Option.of(new Dron(dron.getId(),dron.getPosicion(),d,dron.getEntregas()));
     }
 
     static public Option<Dron> girarIzquierda(Dron dron){
@@ -71,7 +73,7 @@ public class ServicioDron {
             default:
                 break;
         }
-        return Option.of(new Dron(dron.getId(),dron.getX(),dron.getY(),d,dron.getEntregas()));
+        return Option.of(new Dron(dron.getId(),dron.getPosicion(),d,dron.getEntregas()));
     }
 
 }

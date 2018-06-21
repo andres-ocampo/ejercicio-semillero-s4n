@@ -2,6 +2,7 @@ package co.com.s4n.semillero.ejercicio.servicios;
 
 
 import co.com.s4n.semillero.ejercicio.dominio.entidades.Dron;
+import co.com.s4n.semillero.ejercicio.dominio.entidades.Posicion;
 import co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron;
 import co.com.s4n.semillero.ejercicio.dominio.vo.Direccion;
 import io.vavr.collection.List;
@@ -26,28 +27,28 @@ public class ServicioDronSuite {
         Dron dron = Mockito.mock(Dron.class);
         PowerMockito.mockStatic(ServicioDron.class);
         PowerMockito.when(ServicioDron.avanzar(dron))
-                .thenReturn(Option.of(new Dron(1,1,1,Direccion.ESTE,List.empty())));
+                .thenReturn(Option.of(new Dron(1,new Posicion(1,1),Direccion.ESTE,List.empty())));
 
         assertTrue(ServicioDron.avanzar(dron).isDefined());
     }
 
     @Test
     public void testAvanzar(){
-        Dron dron = new Dron(1,0,0,Direccion.NORTE,List.empty());
+        Dron dron = new Dron(1,new Posicion(0,0),Direccion.NORTE,List.empty());
         Option<Dron> dron2 = ServicioDron.avanzar(dron);
-        assertEquals(dron2.get().getY(), 1);
+        assertEquals(dron2.get().getPosicion().getY(), 1);
     }
 
     @Test
     public void testGirarDerecha(){
-        Dron dron = new Dron(1,0,0,Direccion.NORTE,List.empty());
+        Dron dron = new Dron(1,new Posicion(0,0),Direccion.NORTE,List.empty());
         Option<Dron> dron2 = ServicioDron.girarDerecha(dron);
         assertEquals(dron2.get().getDireccion(), Direccion.ESTE);
     }
 
     @Test
     public void testGirarIzquierda(){
-        Dron dron = new Dron(1,0,0,Direccion.NORTE,List.empty());
+        Dron dron = new Dron(1,new Posicion(1,1),Direccion.NORTE,List.empty());
         Option<Dron> dron2 = ServicioDron.girarIzquierda(dron);
         assertEquals(dron2.get().getDireccion(), Direccion.OESTE);
     }
